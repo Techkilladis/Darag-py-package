@@ -12,28 +12,28 @@
 
 ---
 
-## 📖 Overview
+## Overview
 
 **Darag-py-package** (`darago_core`) is the heart of the Darag platform. It provides a robust, language-agnostic core library for codebase indexing, context engineering, repository management, and test execution. Designed for modularity and performance, it powers both the Darag CLI and the VS Code Extension.
 
-This package enables developers and AI agents to understand codebases at scale — parsing multiple languages, building dependency graphs, and generating rich contextual data for intelligent development workflows.
+This package enables developers and AI agents to understand codebases at scale -- parsing multiple languages, building dependency graphs, and generating rich contextual data for intelligent development workflows.
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | Description |
 |---------|-------------|
-| **🔧 Multi-Language Indexing** | Pluggable indexers for Python, TypeScript, and Go with an extensible factory pattern |
-| **🧠 Context Engine** | Generates rich, scoped context from indexed code data for AI and IDE integrations |
-| **📂 Repository Manager** | Handles repository discovery, analysis, and metadata management |
-| **🧪 Test Runner** | Executes tests, collects results, and integrates with the DAG execution pipeline |
-| **🏭 Indexer Factory** | Language-agnostic factory pattern for registering and selecting indexers dynamically |
-| **⚡ Performance-First Design** | Optimized for large codebases with caching and incremental indexing support |
+| **Multi-Language Indexing** | Pluggable indexers for Python, TypeScript, and Go with an extensible factory pattern |
+| **Context Engine** | Generates rich, scoped context from indexed code data for AI and IDE integrations |
+| **Repository Manager** | Handles repository discovery, analysis, and metadata management |
+| **Test Runner** | Executes tests, collects results, and integrates with the DAG execution pipeline |
+| **Indexer Factory** | Language-agnostic factory pattern for registering and selecting indexers dynamically |
+| **Performance-First Design** | Optimized for large codebases with caching and incremental indexing support |
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 darago_core/
@@ -42,7 +42,7 @@ darago_core/
 ├── indexer_base.py           # Abstract base class for all indexers
 ├── indexer_factory.py        # Factory for language-specific indexer registration
 ├── repo_manager.py           # Repository discovery and management utilities
-└── test_runner.py            # Test execution, collection, and result aggregation
+├── test_runner.py            # Test execution, collection, and result aggregation
 └── indexers/
     ├── __init__.py
     ├── go_indexer.py         # Go language indexer (AST + symbol extraction)
@@ -52,7 +52,7 @@ darago_core/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -97,7 +97,7 @@ print(context)
 
 ---
 
-## 🔧 Development
+## Development
 
 ### Prerequisites
 
@@ -147,7 +147,7 @@ class RustIndexer(BaseIndexer):
 
 ---
 
-## 📦 Publishing
+## Publishing
 
 ```bash
 # Build the package
@@ -159,7 +159,7 @@ twine upload dist/*
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -173,13 +173,13 @@ Please ensure all code follows the project's style guidelines and includes appro
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🔗 Related Repositories
+## Related Repositories
 
 | Repository | Description |
 |------------|-------------|
@@ -188,7 +188,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - AST parsing leverages Python's built-in `ast` module and TypeScript's `typescript` npm package via subprocess
 - Architecture inspired by modern static analysis tools like `pylint`, `eslint`, and `gopls`
@@ -198,7 +198,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 <div align="center">
 
-**Made with ❤️ by the Darag Team**
+**Built by the Darag Team**
 
 [Report Bug](https://github.com/Techkilladis/Darag-py-package/issues) · [Request Feature](https://github.com/Techkilladis/Darag-py-package/issues)
 
